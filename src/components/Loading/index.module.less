@@ -1,0 +1,30 @@
+.loadingWrap {
+  height: 100%;
+  width: 100%;
+  :global {
+    .custom-loading-column {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      .ant-spin-container {
+        display: flex;
+        height: 100%;
+        overflow: hidden;
+        overflow-y: auto;
+        flex-direction: column;
+      }
+    }
+    .custom-loading-row {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      .ant-spin-container {
+        display: flex;
+        height: 100%;
+        overflow: hidden;
+        overflow-y: auto;
+        flex-direction: row;
+      }
+    }
+  }
+}
