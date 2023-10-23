@@ -7,7 +7,7 @@ export const RoundType = {
 }
 export default function thousands(num, maxDecimal, isUndefinedShowDefault, roundType = RoundType.ROUND) {
   // 默认保留两位小数
-  if (num === null || num === undefined || isCoverNum(num)) {
+  if (num === null || num === undefined || !isCoverNum(num)) {
     return isUndefinedShowDefault || num;
   }
   let numStr = num.toString();
