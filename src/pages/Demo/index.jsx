@@ -1,6 +1,7 @@
 import * as COMS from '@coms'
 import style from './index.module.less'
 const suffix = 'Config'
+
 const { config:CONFIG,COMPONENTS} = Object.keys(COMS).reduce((pre, key) => {
  if(key.includes(suffix)) {
    (pre.config)[key] = COMS[key]
